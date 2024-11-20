@@ -1,0 +1,41 @@
+POST http://localhost:8080/api/contratos
+Content-Type: application/json
+
+{
+  "identificador": "C-001",
+  "valor": 150000.50,
+  "nombreContratante": "Empresa A",
+  "documentoContratante": "1234567890",
+  "nombreContratista": "Proveedor B",
+  "documentoContratista": "0987654321",
+  "fechaInicial": "2024-11-01",
+  "fechaFinal": "2024-12-01"
+}
+
+###
+
+GET http://localhost:8080/api/contratos
+
+###
+
+GET http://localhost:8080/api/contratos/1
+
+###
+
+PUT http://localhost:8080/api/contratos/1
+Content-Type: application/json
+
+{
+  "identificador": "C-002",
+  "valor": 200000.75,
+  "nombreContratante": "Empresa X",
+  "documentoContratante": "9876543210",
+  "nombreContratista": "Proveedor Y",
+  "documentoContratista": "0123456789",
+  "fechaInicial": "2024-11-15",
+  "fechaFinal": "2024-12-15"
+}
+
+###
+
+DELETE http://localhost:8080/api/contratos/1
